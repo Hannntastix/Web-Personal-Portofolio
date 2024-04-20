@@ -1,0 +1,2388 @@
+body {
+    width: auto;
+    margin: 0;
+    padding: 0; 
+    background-color: rgb(47, 57, 86);
+}
+
+@keyframes slideinleft {
+    from {
+        transform: translateX(-100px);
+    }
+ 
+    to {
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width:450px) {
+    main {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        background-color: none;
+        animation-name: slideinleft;
+        animation-duration: 2s;
+        z-index: -1;
+    }
+
+    .main {
+        display: flex;
+        background-color: none;
+    }
+
+    header {
+        background-color: red;
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: inline;
+    }
+
+    #navbar {
+        padding: 20px;
+        opacity: 1;
+        -webkit-backdrop-filter: blur(10px);
+        /*INI KALO GA NGEFEK MASUKIN KE MEDIA QUARRIES*/
+        backdrop-filter: blur(10px);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 0;
+        display: flex;
+        height: 40px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    footer {
+        padding: 20px;
+        background-color: rgb(47, 57, 86);
+        border-radius: 5px;
+        margin-top: 5vw;
+    }
+
+    article {
+        padding: 30px 10px 10px 10px;
+        background-color: rgb(47, 57, 86);
+        border-radius: 5px;
+        margin-top: 5vw;
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    aside {
+        padding: 10px;
+        border-radius: 5px;
+        justify-content: center;
+        height: 52vw;
+        width: 40vw;
+        background-color: rgb(47, 57, 86);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+        padding: 0px;
+        background-color: none;
+        margin-top: 7px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        background-color: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        background-color: none;
+        width: 70%;
+        margin: auto;
+    }
+
+    .li {
+        text-decoration: none;
+        font-size: 2.3vw;
+        color: white;
+    }
+
+    .li:hover {
+        color: rgb(1, 255, 255);
+    }
+
+    .navbar-title {
+        color: white;
+        font-size: 1.8vw;
+        padding: 0px;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 4vw;
+    }
+
+    .judul1 {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        margin-left: 5vw;
+        background-color: none;
+        margin-top: 0;
+    }
+
+    .judul2 {
+        text-align: center;
+    }
+
+    .about {
+        font-size: 1.7vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        top: 0;
+        color: rgb(165, 165, 165);
+        margin-left: 5vw;
+        background-color: none;
+        text-align: justify;
+    }
+
+    .judul {
+        font-size: 2.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(143, 143, 143);
+        margin-left: 5vw;
+        background-color: none;
+        padding-top: 10px;
+    }
+
+    .opening {
+        font-size: 2.3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        top: 0;
+        color: rgb(239, 197, 197);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .skill {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(47, 57, 86), rgb(0, 0, 72));
+        margin-top: 17vw;
+    }
+
+    .heading {
+        font-size: 6vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .language {
+        font-size: 5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .icons {
+        width: 8vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .icons1 {
+        width: 24vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .icons2 {
+        width: 10vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .image {
+        margin-left: 5vw;
+        padding: 0 0 0 20px;
+        gap: 2vw;
+    }
+
+    .software {
+        font-size: 5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+        margin-top: 7vw;
+    }
+
+    .informatika {
+        font-size: 4.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .tools {
+        width: 8vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .list {
+        font-size: 4vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .list2 {
+        font-size: 2.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .project {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(0, 0, 72), rgb(47, 57, 86));
+        margin-top: -31px;
+    }
+
+    .heading-project {
+        font-size: 7vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+        padding: 250px 0 100px 0;
+    }
+
+    .gallery {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 0 0px 100px 0
+    }
+
+    .container1 {
+        width: 80vw;
+    }
+
+    .container2 {
+        width: 80vw;
+    }
+
+    .container3 {
+        width: 80vw;
+    }
+
+    .container4 {
+        width: 80vw;
+    }
+
+    .project-name {
+        margin-left: 1.3vw;
+        color: white;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .description {
+        margin-left: 1.3vw;
+        color: rgb(172, 172, 172);
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .article2 {
+        background-color: rgb(0, 0, 72);
+        border-radius: 5px;
+        margin-top: -2vw;
+        flex: 1;
+        margin-right: 20px;
+        padding: 0vw 1.4vw 1.4vw 1.4vw;
+    }
+
+    .aside2 {
+        background-color: none;
+        padding: 20px;
+        border-radius: 5px;
+        justify-content: center;
+        height: 110vw;
+    }
+
+    .organisation-doc {
+        width: 100%;
+        height: 24.5vw;
+    }
+
+    .organisation-doc1 {
+        width: 60%;
+        height: 30%;
+        margin-left: 20%;
+    }
+
+    .experience {
+        display: flex;
+        background-color: rgb(0, 0, 72);
+        padding-top: 200px;
+    }
+
+    .ex-project {
+        font-size: 4vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+    }
+
+    .company {
+        margin-left: 5vw;
+        font-size: 3vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+    }
+
+    .company1 {
+        margin-left: 5vw;
+        font-size: 4vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+    }
+
+    .listed {
+        font-size: 1.8vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .work-doc {
+        width: 100%;
+        height: 35vw;
+    }
+
+    .popup {
+        transition: 0.3s;
+        cursor: pointer;
+        width: 80vw;
+        height: 40vw;
+        border-radius: 10px;
+        margin-left: 1.3vw;
+    }
+
+    .popup:hover {
+        scale: 1.1;
+    }
+
+    .copyright-state {
+        color: rgb(172, 172, 172);
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 480;
+        font-style: normal;
+        font-size: 4vw;
+    }
+
+
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+        width: 100%;
+        align-items: center;
+    }
+
+    .social-media-links {
+        z-index: 3;
+        gap: 2vw;
+        margin-left: 0;
+        margin-top: 2vw;
+        text-align: center;
+        height: auto;
+        list-style: none;
+    }
+}
+@media screen and (min-width:450px) and (max-width:700px) {
+    main {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        background-color: none;
+        animation-name: slideinleft;
+        animation-duration: 2s;
+        z-index: -1;
+    }
+
+    .main {
+        display: flex;
+        background-color: none;
+    }
+
+    header {
+        background-color: red;
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: inline;
+    }
+
+    #navbar {
+        padding: 20px;
+        opacity: 1;
+        -webkit-backdrop-filter: blur(10px);
+        /*INI KALO GA NGEFEK MASUKIN KE MEDIA QUARRIES*/
+        backdrop-filter: blur(10px);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 0;
+        display: flex;
+        height: 40px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    footer {
+        padding: 20px;
+        background-color: rgb(47, 57, 86);
+        border-radius: 5px;
+        margin-top: 5vw;
+    }
+
+    article {
+        padding: 30px 10px 10px 10px;
+        background-color: rgb(47, 57, 86);
+        border-radius: 5px;
+        margin-top: 5vw;
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    aside {
+        padding: 10px;
+        border-radius: 5px;
+        justify-content: center;
+        height: 52vw;
+        width: 40vw;
+        background-color: rgb(47, 57, 86);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+        padding: 0px;
+        background-color: none;
+        margin-top: 7px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        background-color: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        background-color: none;
+        width: 70%;
+        margin: auto;
+    }
+
+    .li {
+        text-decoration: none;
+        font-size: 2.3vw;
+        color: white;
+    }
+
+    .li:hover {
+        color: rgb(1, 255, 255);
+    }
+
+    .navbar-title {
+        color: white;
+        font-size: 1.8vw;
+        padding: 0px;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 4vw;
+    }
+
+    .judul1 {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        margin-left: 5vw;
+        background-color: none;
+        margin-top: 0;
+    }
+
+    .judul2 {
+        text-align: center;
+    }
+
+    .about {
+        font-size: 1.7vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        top: 0;
+        color: rgb(165, 165, 165);
+        margin-left: 5vw;
+        background-color: none;
+        text-align: justify;
+    }
+
+    .judul {
+        font-size: 2.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(143, 143, 143);
+        margin-left: 5vw;
+        background-color: none;
+        padding-top: 10px;
+    }
+
+    .opening {
+        font-size: 2.3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        top: 0;
+        color: rgb(239, 197, 197);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .skill {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(47, 57, 86), rgb(0, 0, 72));
+        margin-top: 17vw;
+    }
+
+    .heading {
+        font-size: 6vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .language {
+        font-size: 5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .icons {
+        width: 8vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .icons1 {
+        width: 24vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .icons2 {
+        width: 10vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .image {
+        margin-left: 5vw;
+        padding: 0 0 0 20px;
+        gap: 2vw;
+    }
+
+    .software {
+        font-size: 5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+        margin-top: 7vw;
+    }
+
+    .informatika {
+        font-size: 4.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .tools {
+        width: 8vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .list {
+        font-size: 4vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .list2 {
+        font-size: 2.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .project {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(0, 0, 72), rgb(47, 57, 86));
+        margin-top: -31px;
+    }
+
+    .heading-project {
+        font-size: 7vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+        padding: 250px 0 100px 0;
+    }
+
+    .gallery {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 0 0px 100px 0
+    }
+
+    .container1 {
+        width: 70vw;
+    }
+
+    .container2 {
+        width: 70vw;
+    }
+
+    .container3 {
+        width: 70vw;
+    }
+
+    .container4 {
+        width: 70vw;
+    }
+
+    .project-name {
+        margin-left: 1.3vw;
+        color: white;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .description {
+        margin-left: 1.3vw;
+        color: rgb(172, 172, 172);
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .article2 {
+        background-color: rgb(0, 0, 72);
+        border-radius: 5px;
+        margin-top: -2vw;
+        flex: 1;
+        margin-right: 20px;
+        padding: 0vw 1.4vw 1.4vw 1.4vw;
+    }
+
+    .aside2 {
+        background-color: none;
+        padding: 20px;
+        border-radius: 5px;
+        justify-content: center;
+        height: 80vw;
+    }
+
+    .organisation-doc {
+        width: 100%;
+        height: 22%;
+    }
+
+    .organisation-doc1 {
+        width: 60%;
+        height: 30%;
+        margin-left: 20%;
+    }
+
+    .experience {
+        display: flex;
+        background-color: rgb(0, 0, 72);
+        padding-top: 200px;
+    }
+
+    .ex-project {
+        font-size: 4vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+    }
+
+    .company {
+        margin-left: 5vw;
+        font-size: 3vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+    }
+
+    .company1 {
+        margin-left: 5vw;
+        font-size: 4vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+    }
+
+    .listed {
+        font-size: 1.8vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .work-doc {
+        width: 100%;
+        height: 26vw;
+    }
+
+    .popup {
+        transition: 0.3s;
+        cursor: pointer;
+        width: 70vw;
+        height: 30vw;
+        border-radius: 10px;
+        margin-left: 1.3vw;
+    }
+
+    .popup:hover {
+        scale: 1.1;
+    }
+
+    .copyright-state {
+        color: rgb(172, 172, 172);
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 480;
+        font-style: normal;
+        font-size: 3vw;
+    }
+
+
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+        width: 100%;
+        align-items: center;
+    }
+
+    .social-media-links {
+        z-index: 3;
+        gap: 2vw;
+        margin-left: 0;
+        margin-top: 2vw;
+        text-align: center;
+        height: auto;
+        list-style: none;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:850px) {
+    main {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        background-color: none;
+        animation-name: slideinleft;
+        animation-duration: 2s;
+        z-index: -1;
+    }
+
+    .main {
+        display: flex;
+        background-color: none;
+    }
+
+    aside {
+        width: 30%;
+        height: auto;
+    }
+
+    header {
+        background-color: red;
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: inline;
+    }
+
+    #navbar {
+        padding: 20px;
+        opacity: 1;
+        -webkit-backdrop-filter: blur(10px);
+        /*INI KALO GA NGEFEK MASUKIN KE MEDIA QUARRIES*/
+        backdrop-filter: blur(10px);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 0;
+        display: flex;
+        height: 40px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    footer {
+        padding: 20px;
+        background-color: rgb(47, 57, 86);
+        border-radius: 5px;
+        margin-top: 5vw;
+    }
+
+    article {
+        padding: 20px;
+        background-color: rgb(47, 57, 86);
+        border-radius: 5px;
+        margin-top: 5vw;
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    aside {
+        padding: 20px;
+        border-radius: 5px;
+        justify-content: center;
+        height: 40vw;
+        width: 35vw;
+        background-color: rgb(47, 57, 86);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 6vw;
+        padding: 0px;
+        background-color: none;
+        margin-top: 7px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        background-color: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        background-color: none;
+        width: 70%;
+        margin: auto;
+    }
+
+    .li {
+        text-decoration: none;
+        font-size: 1.8vw;
+        color: white;
+    }
+
+    .li:hover {
+        color: rgb(1, 255, 255);
+    }
+
+    .navbar-title {
+        color: white;
+        font-size: 1.8vw;
+        padding: 0px;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 4vw;
+    }
+
+    .judul1 {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        margin-left: 5vw;
+        background-color: none;
+        margin-top: 0;
+    }
+
+    .judul2 {
+        text-align: center;
+    }
+
+    .about {
+        font-size: 1.7vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        top: 0;
+        color: rgb(165, 165, 165);
+        margin-left: 5vw;
+        background-color: none;
+        text-align: justify;
+    }
+
+    .judul {
+        font-size: 1.9vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(143, 143, 143);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .opening {
+        font-size: 1.9vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        top: 0;
+        color: rgb(239, 197, 197);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .skill {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(47, 57, 86), rgb(0, 0, 72));
+        margin-top: 17vw;
+    }
+
+    .heading {
+        font-size: 5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .language {
+        font-size: 4vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .icons {
+        width: 8vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .icons1 {
+        width: 24vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .icons2 {
+        width: 10vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .image {
+        margin-left: 5vw;
+        padding: 0 0 0 20px;
+        gap: 2vw;
+    }
+
+    .software {
+        font-size: 4vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+        margin-top: 7vw;
+    }
+
+    .informatika {
+        font-size: 3.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .tools {
+        width: 8vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .list {
+        font-size: 2.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .list2 {
+        font-size: 2vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .project {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(0, 0, 72), rgb(47, 57, 86));
+        margin-top: -31px;
+    }
+
+    .heading-project {
+        font-size: 5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+        padding: 250px 0 100px 0;
+    }
+
+    .gallery {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 0 0px 100px 0
+    }
+
+    .container1 {
+        width: 35vw;
+    }
+
+    .container2 {
+        width: 35vw;
+    }
+
+    .container3 {
+        width: 35vw;
+    }
+
+    .container4 {
+        width: 35vw;
+    }
+
+    .project-name {
+        margin-left: 1.3vw;
+        color: white;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+    }
+
+    .description {
+        margin-left: 1.3vw;
+        color: rgb(172, 172, 172);
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        text-align: justify;
+    }
+
+    .article2 {
+        background-color: rgb(0, 0, 72);
+        border-radius: 5px;
+        margin-top: 1vw;
+        flex: 1;
+        margin-right: 20px;
+        padding: 1.4vw;
+    }
+
+    .aside2 {
+        background-color: none;
+        padding: 20px;
+        border-radius: 5px;
+        justify-content: center;
+        height: 80%;
+    }
+
+    .organisation-doc {
+        width: 100%;
+        height: 15vw;
+    }
+
+    .organisation-doc1 {
+        width: 40%;
+        height: 15%;
+        margin-left: 30%;
+    }
+
+    .experience {
+        display: flex;
+        background-color: rgb(0, 0, 72);
+        padding-top: 200px;
+    }
+
+    .ex-project {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+    }
+
+    .company {
+        margin-left: 5vw;
+        font-size: 2vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+    }
+
+    .company1 {
+        margin-left: 5vw;
+        font-size: 4vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+    }
+
+    .listed {
+        font-size: 2vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .work-doc {
+        width: 100%;
+        height: 20vw;
+    }
+
+    .popup {
+        transition: 0.3s;
+        cursor: pointer;
+        width: 35vw;
+        height: 15vw;
+        border-radius: 10px;
+        margin-left: 1.3vw;
+    }
+
+    .popup:hover {
+        scale: 1.1;
+    }
+
+    .copyright-state {
+        color: rgb(172, 172, 172);
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 480;
+        font-style: normal;
+    }
+
+
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+        width: 100%;
+        align-items: center;
+    }
+
+    .social-media-links {
+        z-index: 3;
+        gap: 2vw;
+        margin-left: 0;
+        margin-top: 2vw;
+        text-align: center;
+        height: auto;
+        list-style: none;
+    }
+}
+
+@media screen and (min-width:850px) and (max-width:899px) {
+    main {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        background-color: none;
+        animation-name: slideinleft;
+        animation-duration: 2s;
+        z-index: -1;
+    }
+
+    .main {
+        display: flex;
+        background-color: none;
+    }
+
+    aside {
+        width: 30%;
+        height: auto;
+    }
+
+    header {
+        background-color: red;
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: inline;
+    }
+
+    #navbar {
+        padding: 20px;
+        opacity: 1;
+        -webkit-backdrop-filter: blur(10px);
+        /*INI KALO GA NGEFEK MASUKIN KE MEDIA QUARRIES*/
+        backdrop-filter: blur(10px);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 0;
+        display: flex;
+        height: 40px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    footer {
+        padding: 20px;
+        background-color: rgb(47, 57, 86);
+        border-radius: 5px;
+        margin-top: 5vw;
+    }
+
+    article {
+        padding: 20px;
+        background-color: rgb(47, 57, 86);
+        border-radius: 5px;
+        margin-top: 5vw;
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    aside {
+        padding: 20px;
+        border-radius: 5px;
+        justify-content: center;
+        height: 100%;
+        background-color: rgb(47, 57, 86);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 6vw;
+        padding: 0px;
+        background-color: none;
+        margin-top: 7px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        background-color: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        background-color: none;
+        width: 70%;
+        margin: auto;
+    }
+
+    .li {
+        text-decoration: none;
+        font-size: 1.5vw;
+        color: white;
+    }
+
+    .li:hover {
+        color: rgb(1, 255, 255);
+    }
+
+    .navbar-title {
+        color: white;
+        font-size: 15px;
+        padding: 0px;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 4vw;
+    }
+
+    .judul1 {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        margin-left: 5vw;
+        background-color: none;
+        margin-top: 0;
+    }
+
+    .judul2 {
+        text-align: center;
+    }
+
+    .about {
+        font-size: 1.4vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        top: 0;
+        color: rgb(165, 165, 165);
+        margin-left: 5vw;
+        background-color: none;
+        text-align: justify;
+    }
+
+    .judul {
+        font-size: 1.4vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(143, 143, 143);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .opening {
+        font-size: 1.7vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        top: 0;
+        color: rgb(239, 197, 197);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .skill {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(47, 57, 86), rgb(0, 0, 72));
+        margin-top: 17vw;
+    }
+
+    .heading {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .language {
+        font-size: 2vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .icons {
+        width: 5vw;
+        height: 5vw;
+        margin-left: 1vw;
+    }
+
+    .icons1 {
+        width: 15vw;
+        height: 5vw;
+        margin-left: 1vw;
+    }
+
+    .icons2 {
+        width: 6vw;
+        height: 5vw;
+        margin-left: 1vw;
+    }
+
+    .tools {
+        width: 8vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .image {
+        margin-left: 5vw;
+        padding: 0 0 0 20px;
+        gap: 2vw;
+    }
+
+    .software {
+        font-size: 2vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+        margin-top: 7vw;
+    }
+
+    .informatika {
+        font-size: 1.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .list {
+        font-size: 1.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .list2 {
+        font-size: 2.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .project {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(0, 0, 72), rgb(47, 57, 86));
+        margin-top: -31px;
+    }
+
+    .heading-project {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+        padding: 250px 0 100px 0;
+    }
+
+    .gallery {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 0 0px 100px 0
+    }
+
+    .container1 {
+        width: 30vw;
+    }
+
+    .container2 {
+        width: 30vw;
+    }
+
+    .container3 {
+        width: 30vw;
+    }
+
+    .container4 {
+        width: 30vw;
+    }
+
+    .project-name {
+        margin-left: 1.3vw;
+        color: white;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+    }
+
+    .description {
+        margin-left: 1.3vw;
+        color: rgb(172, 172, 172);
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        text-align: justify;
+    }
+
+    .article2 {
+        background-color: rgb(0, 0, 72);
+        border-radius: 5px;
+        margin-top: 5vw;
+        flex: 1;
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    .aside2 {
+        background-color: none;
+        padding: 20px;
+        border-radius: 5px;
+        justify-content: center;
+        height: 80%;
+    }
+
+    .organisation-doc {
+        width: 100%;
+        height: 15vw;
+    }
+
+    .organisation-doc1 {
+        width: 40%;
+        height: 15%;
+        margin-left: 30%;
+    }
+
+    .experience {
+        display: flex;
+        background-color: rgb(0, 0, 72);
+        padding-top: 200px;
+    }
+
+    .work-doc {
+        width: 100%;
+        height: 15vw;
+    }
+
+    .listed {
+        font-size: 1.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .ex-project {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+    }
+
+    .company {
+        margin-left: 5vw;
+        font-size: 3vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+    }
+
+    .company1 {
+        margin-left: 5vw;
+        font-size: 4vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+    }
+
+
+    .popup {
+        transition: 0.3s;
+        cursor: pointer;
+        width: 30vw;
+        height: 15vw;
+        border-radius: 10px;
+        margin-left: 1.3vw;
+    }
+
+    .popup:hover {
+        scale: 1.1;
+    }
+
+    .copyright-state {
+        color: rgb(172, 172, 172);
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 480;
+        font-style: normal;
+    }
+
+
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+        width: 100%;
+        align-items: center;
+    }
+
+    .social-media-links {
+        z-index: 3;
+        gap: 2vw;
+        margin-left: 0;
+        margin-top: 2vw;
+        text-align: center;
+        height: auto;
+        list-style: none;
+    }
+}
+
+@media screen and (min-width:899px) {
+    main {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        background-color: none;
+        animation-name: slideinleft;
+        animation-duration: 2s;
+        z-index: -1;
+    }
+
+    .main {
+        display: flex;
+        background-color: none;
+    }
+
+    aside {
+        width: 30%;
+        height: auto;
+    }
+
+    header {
+        background-color: red;
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: inline;
+    }
+
+    #navbar {
+        padding: 20px;
+        opacity: 1;
+        -webkit-backdrop-filter: blur(10px);
+        /*INI KALO GA NGEFEK MASUKIN KE MEDIA QUARRIES*/
+        backdrop-filter: blur(10px);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 0;
+        display: flex;
+        height: 40px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    footer {
+        padding: 20px;
+        background-color: rgb(47, 57, 86);
+        border-radius: 5px;
+        margin-top: 5vw;
+    }
+
+    article {
+        padding: 20px;
+        background-color: rgb(47, 57, 86);
+        border-radius: 5px;
+        margin-top: 5vw;
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    aside {
+        padding: 20px;
+        border-radius: 5px;
+        justify-content: center;
+        height: 100%;
+        background-color: rgb(47, 57, 86);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 6vw;
+        padding: 0px;
+        background-color: none;
+        margin-top: 7px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        background-color: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        background-color: none;
+        width: 70%;
+        margin: auto;
+    }
+
+    .li {
+        text-decoration: none;
+        font-size: 1.5vw;
+        color: white;
+    }
+
+    .li:hover {
+        color: rgb(1, 255, 255);
+    }
+
+    .navbar-title {
+        color: white;
+        font-size: 15px;
+        padding: 0px;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 4vw;
+    }
+
+    .judul1 {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        margin-left: 5vw;
+        background-color: none;
+        margin-top: 0;
+    }
+
+    .judul2 {
+        text-align: center;
+    }
+
+    .about {
+        font-size: 1.4vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        top: 0;
+        color: rgb(165, 165, 165);
+        margin-left: 5vw;
+        background-color: none;
+        text-align: justify;
+    }
+
+    .judul {
+        font-size: 1.4vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(143, 143, 143);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .opening {
+        font-size: 1.7vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        top: 0;
+        color: rgb(239, 197, 197);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .skill {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(47, 57, 86), rgb(0, 0, 72));
+        margin-top: 17vw;
+    }
+
+    .heading {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .language {
+        font-size: 2vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .icons {
+        width: 5vw;
+        height: 5vw;
+        margin-left: 1vw;
+    }
+
+    .icons1 {
+        width: 15vw;
+        height: 5vw;
+        margin-left: 1vw;
+    }
+
+    .icons2 {
+        width: 6vw;
+        height: 5vw;
+        margin-left: 1vw;
+    }
+
+    .image {
+        margin-left: 5vw;
+        padding: 0 0 0 20px;
+        gap: 2vw;
+    }
+
+    .software {
+        font-size: 2vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+        margin-top: 7vw;
+    }
+
+    .informatika {
+        font-size: 1.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(172, 172, 172);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .tools {
+        width: 8vw;
+        height: 8vw;
+        margin-left: 2vw;
+    }
+
+    .list {
+        font-size: 1.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .list2 {
+        font-size: 1.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .project {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(0, 0, 72), rgb(47, 57, 86));
+        margin-top: -31px;
+    }
+
+    .heading-project {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+        padding: 250px 0 100px 0;
+    }
+
+    .gallery {
+        width: 77%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 0 0px 100px 0
+    }
+
+    .container1 {
+        width: 35vw;
+    }
+
+    .container2 {
+        width: 35vw;
+    }
+
+    .container3 {
+        width: 35vw;
+    }
+
+    .container4 {
+        width: 35vw;
+    }
+
+    .project-name {
+        margin-left: 1.3vw;
+        color: white;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+    }
+
+    .description {
+        margin-left: 1.3vw;
+        color: rgb(172, 172, 172);
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        text-align: justify;
+    }
+
+    .article2 {
+        background-color: rgb(0, 0, 72);
+        border-radius: 5px;
+        margin-top: 5vw;
+        flex: 1;
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    .aside2 {
+        background-color: none;
+        padding: 20px;
+        border-radius: 5px;
+        justify-content: center;
+        height: 80%;
+    }
+
+    .organisation-doc {
+        width: 100%;
+        height: 15vw;
+    }
+
+    .organisation-doc1 {
+        width: 40%;
+        height: 15%;
+        margin-left: 30%;
+    }
+
+    .experience {
+        display: flex;
+        background-color: rgb(0, 0, 72);
+        padding-top: 200px;
+    }
+
+    .work-doc {
+        width: 100%;
+        height: 15vw;
+    }
+    .company1 {
+        margin-left: 5vw;
+        font-size: 4vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+    }
+
+    .listed {
+        font-size: 1.5vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: rgb(200, 200, 200);
+        margin-left: 5vw;
+        background-color: none;
+    }
+
+    .ex-project {
+        font-size: 3vw;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+        text-align: center;
+    }
+
+    .company {
+        margin-left: 5vw;
+        font-size: 3vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 580;
+        font-style: normal;
+        color: white;
+        background-color: none;
+    }
+
+    .popup {
+        transition: 0.3s;
+        cursor: pointer;
+        width: 35vw;
+        height: 15vw;
+        border-radius: 10px;
+        margin-left: 1.3vw;
+    }
+
+    .popup:hover {
+        scale: 1.1;
+    }
+
+    .copyright-state {
+        color: rgb(172, 172, 172);
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-optical-sizing: auto;
+        font-weight: 480;
+        font-style: normal;
+    }
+
+
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+        width: 100%;
+        align-items: center;
+    }
+
+    .social-media-links {
+        z-index: 3;
+        gap: 2vw;
+        margin-left: 0;
+        margin-top: 2vw;
+        text-align: center;
+        height: auto;
+        list-style: none;
+    }
+}
